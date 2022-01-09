@@ -1,6 +1,6 @@
 <domain type="kvm">
   <name>Windows10</name>
-  <uuid>ce942981-a09e-4c49-845c-fb4410ef2f19</uuid>
+  <uuid>dfc96c47-0c20-4ce8-b2c6-f73860dffc25</uuid>
   <metadata>
     <libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0">
       <libosinfo:os id="http://microsoft.com/win/10"/>
@@ -56,11 +56,11 @@
   </pm>
   <devices>
     <emulator>/usr/bin/qemu-system-x86_64</emulator>
-    <disk type="block" device="disk">
+     <disk type="block" device="disk">
       <driver name="qemu" type="raw" cache="none" io="native"/>
-      <source dev="/dev/sdb3"/>
-      <target dev="sdc" bus="sata"/>
-      <address type="drive" controller="0" bus="0" target="0" unit="2"/>
+      <source dev="/dev/sdb2"/>
+      <target dev="sde" bus="sata"/>
+      <address type="drive" controller="0" bus="0" target="0" unit="4"/>
     </disk>
     <controller type="usb" index="0" model="qemu-xhci" ports="15">
       <address type="pci" domain="0x0000" bus="0x02" slot="0x00" function="0x0"/>
